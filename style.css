@@ -266,6 +266,37 @@ li .active {
 }
 
 
+.box-main .buttons a {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.35); 
+  border-radius:20px;
+  margin: 0 10px;
+}
+
+.buttons a:hover {
+  color: #000;
+  background: #fff;
+  transition: 0.6s;
+}
+
+.box-main .buttons {
+  margin:0 auto;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+ }
+
+
+
 /* Section B */
 
 
@@ -318,34 +349,6 @@ li .active {
   transform: translate(-50%,-50%);
 }
 
-.box-main .buttons a {
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border: 2px solid rgba(255, 255, 255, 0.35); 
-  border-radius:20px;
-  margin: 0 10px;
-}
-
-.buttons a:hover {
-  color: #000;
-  background: #fff;
-  transition: 0.6s;
-}
-
-.box-main .buttons {
-  margin:0 auto;
-  text-align: center;
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%,-50%);
- }
 
  .box-left, .box-right {
   position: relative;
@@ -781,3 +784,59 @@ h1 span {
   } 
 } 
 
+@media (max-width:395px) {
+
+  .cards {
+  grid-template-columns: repeat(1, minmax(100px,1fr));
+  padding: 20px 0;
+;}
+
+.card h4, .card p, .btn-img {
+  font-size: 10px;
+}
+
+.btn-img {
+  padding: 5px 18px;
+}
+
+.card .stars {
+  padding: 0 0 0 15px;;
+  height: 5px;
+}
+
+.box-main .buttons {
+  flex-direction: column;
+  padding: 30px;
+}
+
+.box-main h2 {
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+
+.boxes .buttons a {
+  padding: 3px 0;
+  margin: 5px 0;
+  border-radius:20px;
+  
+}
+
+.text-content h1 {
+  font-size: 30px;
+}
+
+.text-content h1 span {
+  font-size: 30px;
+}
+
+.showcase h1 {
+  font-size: 60px;
+}
+
+
+.btn {
+  font-size: 10px;
+  padding: 5px;
+}
+
+}
