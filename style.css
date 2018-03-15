@@ -792,7 +792,11 @@ h1 span {
 ;}
 
 .card h4, .card p, .btn-img {
-  font-size: 10px;
+  font-size: 15px;
+}
+
+.card h4 {
+  padding: 50px 15px 15px;
 }
 
 .btn-img {
@@ -801,12 +805,12 @@ h1 span {
 
 .card .stars {
   padding: 0 0 0 15px;;
-  height: 5px;
+  height: 10px;
 }
 
 .box-main .buttons {
   flex-direction: column;
-  padding: 30px;
+  padding: 80px;
 }
 
 .box-main h2 {
@@ -839,4 +843,8 @@ h1 span {
   padding: 5px;
 }
 
+
+.unroll {
+  padding-top: 50px;
+}
 }
